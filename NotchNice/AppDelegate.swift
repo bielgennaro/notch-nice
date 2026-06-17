@@ -6,6 +6,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_: Notification) {
         setupNotchPanel()
+
+//        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
+//            let track = SpotifyReader.fetch()
+//            print("🎵 Actual song:", track as Any)
+//        }
     }
 
     private func notchFrame(for screen: NSScreen) -> NSRect {
