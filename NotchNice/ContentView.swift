@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  NotchNice
-//
-//  Created by Biel on 15/06/26.
-//
 
 import SwiftUI
 

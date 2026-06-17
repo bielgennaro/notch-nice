@@ -1,17 +1,15 @@
-//
-//  NotchNiceApp.swift
-//  NotchNice
-//
-//  Created by Biel on 15/06/26.
-//
-
 import SwiftUI
 
 @main
 struct NotchNiceApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        // MenuBarExtra = ícone no menu bar
+
+        MenuBarExtra("NotchNice", systemImage: "rectangle.topthird.inset.filled") {
+            Button("Exit") { NSApplication.shared.terminate(nil) }
+                .keyboardShortcut("q")
         }
     }
 }
