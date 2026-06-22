@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9588E9412FE37B14002BDDCE /* CatFrames in Resources */ = {isa = PBXBuildFile; fileRef = 9588E9402FE37B14002BDDCE /* CatFrames */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		9588E9402FE37B14002BDDCE /* CatFrames */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CatFrames; sourceTree = "<group>"; };
 		9590A8A52FE0D52E00FFB461 /* NotchNice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchNice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		9590A89C2FE0D52E00FFB461 = {
 			isa = PBXGroup;
 			children = (
+				9588E9402FE37B14002BDDCE /* CatFrames */,
 				9590A8A72FE0D52E00FFB461 /* NotchNice */,
 				9590A8A62FE0D52E00FFB461 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9588E9412FE37B14002BDDCE /* CatFrames in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

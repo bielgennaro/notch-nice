@@ -66,4 +66,23 @@ enum SpotifyReader {
             .replacingOccurrences(of: ",", with: ".")
         return Double(clean) ?? 0
     }
+
+    // MARK: - Playback controls
+
+    static func playPause() { control("playpause") }
+    static func nextTrack() { control("next track") }
+    static func previousTrack() { control("previous track") }
+
+    private static func control(_ command: String) {
+        let src = """
+        if application "Spotify" is running then
+            tell application "Spotify" to \(command)
+        end if
+        """
+        var err: NSDictionary?
+        NSAppleScript(source: src)?.executeAndReturnError(&err)
+        if let err = err {
+            print("⚠️ Spotify control error", err)
+        }
+    }
 }
